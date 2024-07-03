@@ -1,0 +1,78 @@
+---
+title: Text Inputs
+date: 2024-01-03
+tags: field
+---
+
+<h2>Examples</h2>
+<p>Below are some examples of text input fields.</p>
+
+<h3>Basic</h3>
+<div class="field">
+  <label for="text_input">Text Input</label>
+  <input id="text_input" type="text">
+</div>
+
+<div class="field">
+  <label for="text_input">Disabled Text Input</label>
+  <input disabled id="text_input" type="text">
+</div>
+
+{% highlight html %}
+<div class="field">
+  <label for="text_input">Text Input</label>
+  <input id="text_input" type="text">
+</div>
+{% endhighlight %}
+
+<h3>Basic with notes</h3>
+
+<div class="field">
+  <label for="text_input_with_notes">Text Input</label>
+  <input id="text_input_with_notes" type="text">
+  <p class="field__notes">Some notes for the field above.</p>
+</div>
+
+{% highlight html %}
+<div class="field">
+  <label for="text_input_with_notes">Text Input</label>
+  <input id="text_input_with_notes" type="text">
+  <p class="field__notes">Some notes for the field above.</p>
+</div>
+{% endhighlight %}
+
+<h3>Password with reveal</h3>
+
+<div class="field">
+  <label for="password_input">Password</label>
+  <div class="field__password">
+    <input id="password_input" type="password">
+    <span id="togglePassword">Show password</span>
+  </div>
+  <p class="field__notes">Some notes for the field above.</p>
+</div>
+
+{% highlight html %}
+<div class="field">
+  <label for="password_input">Password</label>
+  <div class="field__password">
+    <input id="password_input" type="password">
+    <span id="togglePassword">Show password</span>
+  </div>
+  <p class="field__notes">Some notes for the field above.</p>
+</div>
+{% endhighlight %}
+
+<h3>Textarea</h3>
+
+<div class="field">
+  <label for="textarea">Text</label>
+  <textarea name="" id="textarea" rows="10"></textarea>
+</div>
+
+{% highlight html %}
+<div class="field">
+  <label for="textarea">Text Area</label>
+  <textarea name="" id="textarea" rows="10"></textarea>
+</div>
+{% endhighlight %}

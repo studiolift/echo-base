@@ -1,0 +1,66 @@
+---
+title: Buttons
+date: 2024-01-02
+tags: field
+---
+
+<h2>Examples</h2>
+<p>Buttons and submit inputs usually but not exclusively found at the end of forms.</p>
+
+<h3>Single button</h3>
+<div class="field field--buttons" style="margin-block-start: 0.75rem;">
+  <button>Submit</button>
+</div>
+
+{% highlight html %}
+<div class="field field--buttons" style="margin-block-start: 0.75rem;">
+  <button>Submit</button>
+</div>
+{% endhighlight %}
+
+<h3>Group of buttons</h3>
+
+<h4>Default</h4>
+<div class="field field--buttons" style="margin-block-start: 0.75rem;">
+  <button>Submit</button>
+  <button class="button button--cancel">Cancel</button>
+  <button class="button" disabled>Disabled</button>
+</div>
+
+<h4>Fill</h4>
+<div class="field field--buttons field--buttons--fill" style="margin-block-start: 0.75rem;">
+  <button>Submit</button>
+  <button class="button button--cancel">Cancel</button>
+  <button class="button" disabled>Disabled</button>
+</div>
+
+{% highlight html %}
+<!-- Default -->
+<div class="field field--buttons" style="margin-block-start: 0.75rem;">
+  <button>Submit</button>
+  <button class="button button--cancel">Cancel</button>
+  <button class="button" disabled>Disabled</button>
+</div>
+
+<!-- Fill -->
+<div class="field field--buttons field--buttons--fill" style="margin-block-start: 0.75rem;">
+  <button>Submit</button>
+  <button class="button button--cancel">Cancel</button>
+  <button class="button" disabled>Disabled</button>
+</div>
+{% endhighlight %}
+
+<h3>Small button</h3>
+<div class="field field--buttons" style="margin-block-start: 0.75rem;">
+  <button class="button button--small">Submit</button>
+  <button class="button button--small button--cancel">Cancel</button>
+  <button class="button button--small" disabled>Disabled</button>
+</div>
+
+{% highlight html %}
+<div class="field field--buttons" style="margin-block-start: 0.75rem;">
+  <button class="button button--small">Submit</button>
+  <button class="button button--small button--cancel">Cancel</button>
+  <button class="button button--small" disabled>Disabled</button>
+</div>
+{% endhighlight %}

@@ -1,0 +1,66 @@
+---
+title: Selects
+date: 2024-01-03
+tags: field
+---
+
+<h2>Examples</h2>
+<p>Below are some examples of select fields.</p>
+
+<h3>Basic</h3>
+
+<div class="field field--select">
+  <label for="basic_select">Pick one</label>
+  <select name="basic_select" id="basic_select">
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+    <option value="">Option 3</option>
+    <option value="">Option 4</option>
+  </select>
+</div>
+
+<div class="field field--select">
+  <label for="basic_select">Disabled version</label>
+  <select disabled name="basic_select" id="basic_select">
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+    <option value="">Option 3</option>
+    <option value="">Option 4</option>
+  </select>
+</div>
+
+{% highlight html %}
+<div class="field field--select">
+  <label for="basic_select">Pick one</label>
+  <select name="basic_select" id="basic_select">
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+    <option value="">Option 3</option>
+    <option value="">Option 4</option>
+  </select>
+</div>
+{% endhighlight %}
+
+<h3>Multiple</h3>
+
+<div class="field field--select">
+  <label for="multiple_select">Pick many</label>
+  <select multiple name="multiple_select" id="multiple_select">
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+    <option value="">Option 3</option>
+    <option value="">Option 4</option>
+  </select>
+</div>
+
+{% highlight html %}
+<div class="field field--select">
+  <label for="multiple_select">Pick many</label>
+  <select multiple name="multiple_select" id="multiple_select">
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+    <option value="">Option 3</option>
+    <option value="">Option 4</option>
+  </select>
+</div>
+{% endhighlight %}

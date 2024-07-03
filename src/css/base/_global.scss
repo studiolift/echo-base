@@ -1,0 +1,24 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: var(--spacing-px);
+  
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  font-family: var(--body-font);
+  background-color: var(--background-elevation2);
+  color: var(--text-default);
+  line-height: 1.25;
+}

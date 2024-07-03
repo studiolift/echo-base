@@ -1,0 +1,49 @@
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
+input:not([type]),
+textarea,
+select {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--background-elevation4);
+  padding: calc(var(--spacing) * 0.75);
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1.25;
+  background-color: var(--background-elevation2);
+  color: var(--text-default);
+  box-shadow: 0px 0px 0px 0px var(--action-primary-transparent);
+  transition: 0.5s ease all;
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--background-elevation6);
+    box-shadow: 0px 0px 0px 3px var(--action-primary-transparent);
+  }
+
+  &[disabled],
+  &[disabled]:focus,
+  &[disabled]:hover {
+    cursor: default;
+    background-color: var(--background-elevation3);
+    border-color: var(--background-elevation3);
+    color: var(--text-disabled);
+  }
+
+}
+
+textarea {
+  resize: vertical;
+}

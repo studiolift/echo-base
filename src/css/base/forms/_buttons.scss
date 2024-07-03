@@ -1,0 +1,51 @@
+.button,
+button,
+[type='submit'] {
+  cursor: pointer;
+  display: block;
+  border: 1px solid var(--action-primary);
+  padding: calc(var(--spacing) * 0.75) calc(var(--spacing) * 1.5);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.25;
+  background-color: var(--action-primary);
+  color: var(--agnostic-text-alternative);
+
+  &:focus,
+  &:hover {
+    outline: none;
+    background-color: var(--action-primary-hover);
+    border-color: var(--action-primary-hover);
+    color: var(--agnostic-text-alternative);
+  }
+
+  &[disabled],
+  &[disabled]:focus,
+  &[disabled]:hover {
+    cursor: default;
+    background-color: var(--background-elevation6);
+    border-color: var(--background-elevation6);
+  }
+
+}
+
+
+
+.button--cancel {
+  background-color: var(--action-remove);
+  border-color: var(--action-remove);
+  color: var(--agnostic-text-alternative);
+
+  &:focus,
+  &:hover {
+    background-color: var(--action-remove-hover);
+    border-color: var(--action-remove-hover);
+  }
+
+}
+
+.button--small {
+  font-size: 0.875rem;
+  padding: calc(var(--spacing) * 0.5) calc(var(--spacing) * 0.75);
+}

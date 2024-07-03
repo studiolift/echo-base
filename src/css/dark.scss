@@ -1,0 +1,34 @@
+:root[data-theme="dark"] {
+  --text-default: hsl(240, 20%, 99%);
+  --text-secondary: hsl(240, 3%, 71%);
+  --text-disabled: hsl(240, 2%, 47%);
+  --text-link: hsl(240, 91%, 78%);
+  --text-link--underline: hsl(240, 4%, 30%);
+
+  --background-elevation1: hsl(240, 4%, 10%);
+  --background-elevation2: hsl(240, 3%, 14%);
+  --background-elevation3: hsl(240, 2%, 17%);
+  --background-elevation4: hsl(240, 2%, 21%);
+  --background-elevation5: hsl(240, 1%, 27%);
+  --background-elevation6: hsl(240, 2%, 47%);
+
+  --action-primary: hsl(152, 69%, 31%);
+  --action-primary-hover: hsl(152, 69%, 21%);
+  --action-primary-focus: hsl(152, 69%, 21%);
+  --action-primary-transparent: hsla(152, 69%, 31%, 0.5);
+
+  --action-remove: hsl(354, 70%, 54%);
+  --action-remove-hover: hsl(354, 70%, 44%);
+  --action-remove-focus: hsl(354, 70%, 44%);
+
+  --agnostic-text-default: hsl(240, 4%, 10%);
+  --agnostic-text-secondary: hsl(240, 1%, 27%);
+  --agnostic-text-disabled: hsl(240, 3%, 71%);
+  --agnostic-text-alternative: hsl(240, 20%, 99%);
+
+  --silhouette: contrast(0%) brightness(100);
+  --sky: hsl(240, 4%, 10%);
+
+  --shadow-1: rgba(8, 8, 8, 0.8) 0px 8px 24px;
+
+}

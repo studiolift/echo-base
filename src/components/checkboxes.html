@@ -1,0 +1,66 @@
+---
+title: Radio Buttons and Checkboxes
+date: 2024-01-04
+tags: field
+---
+
+<h2>Examples</h2>
+<p>Below are some examples of radio buttons and checkbox fields.</p>
+
+<div class="field field--radiobuttons">
+  <h3>Radio Buttons</h3>
+  <label class="radiobutton">
+    Option A
+    <input type="radio" name="radio" checked="checked">
+    <span class="radiobutton__mark"></span>
+  </label>
+  <label class="radiobutton">
+    Option B
+    <input type="radio" name="radio">
+    <span class="radiobutton__mark"></span>
+  </label>
+  <label class="radiobutton">
+    Option C
+    <input type="radio" name="radio">
+    <span class="radiobutton__mark"></span>
+  </label>
+</div>
+
+{% highlight html %}
+<div class="field field--radiobuttons">
+  <label class="radiobutton">
+    Option A
+    <input type="radio" name="radio" checked="checked">
+    <span class="radiobutton__mark"></span>
+  </label>
+</div>
+{% endhighlight %}
+
+<div class="field field--checkboxes">
+  <h3>Checkboxes</h3>
+  <label class="checkbox">
+    Option A
+    <input type="checkbox" checked="checked">
+    <span class="checkbox__mark"></span>
+  </label>
+  <label class="checkbox">
+    Option B
+    <input type="checkbox">
+    <span class="checkbox__mark"></span>
+  </label>
+  <label class="checkbox">
+    Option C
+    <input type="checkbox">
+    <span class="checkbox__mark"></span>
+  </label>
+</div>
+
+{% highlight html %}
+<div class="field field--checkboxes">
+  <label class="checkbox">
+    Option A
+    <input type="checkbox" checked="checked">
+    <span class="checkbox__mark"></span>
+  </label>
+</div>
+{% endhighlight %}

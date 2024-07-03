@@ -1,0 +1,54 @@
+---
+title: Ranges
+date: 2024-01-05
+tags: field
+---
+
+<h2>Examples</h2>
+<p>Below are some examples of range fields.</p>
+
+<div class="field field--range">
+  <label for="range" class="form-label">Range</label>
+  <input type="range" class="form-range" id="range">
+</div>
+
+<div class="field field--range field--range-counter">
+  <label for="range_with_counter" class="form-label">Range with counter <span class="value"></span></label>
+  <input min="0" max="100" type="range" class="form-range" id="range_with_counter">
+</div>
+
+<div class="field field--range field--range-counter">
+  <label for="stepped_range" class="form-label">Stepped Range <span class="value"></span></label>
+  <input min="0" max="100" step="10" type="range" class="form-range" id="stepped_range">
+</div>
+
+<div class="field field--range">
+  <label for="disabled_range" class="form-label">Disabled Range</label>
+  <input disabled type="range" class="form-range" id="disabled_range">
+</div>
+
+{% highlight html %}
+<!-- Default -->
+<div class="field field--range">
+  <label for="range" class="form-label">Range</label>
+  <input type="range" class="form-range" id="range">
+</div>
+
+<!-- Default with counter -->
+<div class="field field--range field--range-counter">
+  <label for="range_with_counter" class="form-label">Range with counter <span class="value"></span></label>
+  <input min="0" max="1000" type="range" class="form-range" id="range_with_counter">
+</div>
+
+<!-- Stepped -->
+<div class="field field--range field--range-counter">
+  <label for="stepped_range" class="form-label">Stepped Range <span class="value"></span></label>
+  <input min="0" max="100" step="10" type="range" class="form-range" id="stepped_range">
+</div>
+
+<!-- Disabled -->
+<div class="field field--range">
+  <label for="disabled_range" class="form-label">Disabled Range</label>
+  <input disabled type="range" class="form-range" id="disabled_range">
+</div>
+{% endhighlight %}

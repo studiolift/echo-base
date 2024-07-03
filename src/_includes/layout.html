@@ -1,0 +1,65 @@
+<html lang="en">
+<head data-theme="light">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo Base | {{ title }}</title>
+  <meta name="theme-color" content="#FFB80C">
+  <link rel="shortcut icon" href="//favicon.ico">
+  <link rel="apple-touch-icon" sizes="76x76" href="//76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="//120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="//152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="//180.png">
+  <link rel="stylesheet" href="{{ '/css/light.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/css/dark.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/scripts/colour-theme.js"></script>
+  <script src="/scripts/password-reveal.js"></script>
+  <script src="/scripts/range-counter.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <header class="layout__header">
+      <div>
+        <h2 class="h1">Echo Base</h2>
+      </div>
+      <nav>
+        <h2 class="h3">Style Library</h2>
+        <ul class="menu_list">
+          <li class="{% if title == 'Typography' %}active{% endif %}">
+            <a href="/">Typography</a>
+          </li>
+          {% for component in collections.field %}
+            <li class="{% if title == component.data.title %}active{% endif %}">
+              <a href="{{ component.url }}">
+                {{ component.data.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <figure class="probe_droid">
+        <img src="/assets/ProbeDroid.png" alt="Scanner to System, Scanner to Base">
+      </figure>
+      <figure class="landscape">
+        <svg width="256" height="150" viewBox="0 0 256 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M29.131 22.5806L0 29.5699V150H256V43.5484L214.952 29.5699L184.938 32.7957H154.041L114.759 43.5484L94.8966 22.5806L62.2345 0L29.131 22.5806Z"/>
+        </svg>
+      </figure>
+    </header>
+    <main class="layout__main">
+      <div>
+        <h1>{{ title }}</h1>
+        {{ content }}
+      </div>
+    </main>
+    <footer class="layout__footer">
+      <p><small>&copy; <a target="_blank" href="https//studiolift.com">Lift</a> 2024</small></p>
+      <div class="theme_toggle">
+        <button class="button button--small" type="button" data-theme-toggle aria-label="Change to light theme">Change to light theme</button>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

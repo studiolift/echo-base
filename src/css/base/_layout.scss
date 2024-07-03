@@ -1,0 +1,121 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: 'side' 'main' 'footer';
+
+  @include media('>tablet') {
+    grid-template-columns: 16rem minmax(0, 1fr);
+    grid-template-areas: 'side main' 'side footer';
+    min-height: 100%;
+  }
+
+}
+
+.layout__header,
+.layout__main,
+.layout__footer {
+  padding: calc(var(--spacing) * 0.75);
+
+  @include media('>tablet') {
+    padding: calc(var(--spacing) * 1.5);
+  }
+
+}
+
+.layout__header {
+  grid-area: side;
+  position: relative;
+  background-color: var(--background-elevation1);
+
+  @include media('>tablet') {
+    background: linear-gradient(0deg, rgba(197,213,236,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, var(--sky) 0%, var(--background-elevation2) 40%);
+    box-shadow: var(--shadow-1);
+  }
+
+  & > div,
+  & > nav {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+  .probe_droid {
+    display: none;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    animation: float infinite 4s ease-in-out;
+
+    @include media('>tablet') {
+      display: block;
+    }
+
+    img {
+      max-width: 3rem;
+      filter: brightness(10%);
+      filter: var(--silhouette);
+    }
+
+  }
+
+  @keyframes float {
+    50% { bottom: 3rem }
+  }
+
+  .landscape {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 16rem;
+    z-index: 1;
+
+    @include media('>tablet') {
+      display: block;
+    }
+
+    svg {
+      fill: var(--background-elevation2);
+    }
+
+  }
+
+}
+
+.layout__main {
+  grid-area: main;
+  background-color: var(--background-elevation2);
+
+  & > div {
+   max-width: 680px;
+   margin-inline: auto;
+  }
+
+}
+
+.layout__footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing);
+  min-height: 15rem;
+  background-color: var(--background-elevation2);
+}
+
+.layout__header nav {
+  position: sticky;
+  top: calc(var(--spacing) * 0.75);
+  margin-block-start: calc(var(--spacing) * 0.75);
+
+  @include media('>tablet') {
+    top: calc(var(--spacing) * 1.5);
+    margin-block-start: calc(var(--spacing) * 1.5);
+  }
+
+}
